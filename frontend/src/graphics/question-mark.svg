@@ -1,0 +1,11 @@
+<svg width="167" height="185" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="question_bit">
+   <path id="svg_2" d="m49.76395,44.96729a27.18058,23.22937 0 0 1 27.18058,-23.22937l7.76587,0a27.18058,23.22937 0 0 1 27.18058,23.22937a23.29763,23.22937 0 0 1 -15.53176,23.22937a23.29763,30.97249 0 0 0 -15.53176,30.97249"/>
+  </g>
+  <g id="credit_card">
+   <rect id="svg_5" x="59.70733" y="121.11057" width="46" height="31.08334" rx="3"/>
+   <line id="svg_6" x1="59.70733" y1="132.21176" x2="105.70733" y2="132.21176"/>
+   <line id="svg_7" x1="69.92955" y1="143.31296" x2="69.95511" y2="143.31296"/>
+   <line id="svg_8" x1="80.15178" y1="143.31296" x2="85.26289" y2="143.31296"/>
+  </g>
+</svg>

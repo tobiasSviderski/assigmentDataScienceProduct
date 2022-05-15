@@ -1,0 +1,219 @@
+@import '../../styles/variables';
+
+header {
+  height: 80vh;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+
+    // If the screen is bigger than 768px, the text will be bigger
+    @media (min-width: 1300px) {
+      font-size: 3rem;
+    }
+
+    svg {
+      position: absolute;
+      top: -60px;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 20%;
+    position: relative;
+
+    // If the screen is bigger than 768px, the text will be bigger
+    @media (min-width: 1300px) {
+      font-size: 2rem;
+    }
+
+    svg {
+      position: absolute;
+      top: -60px;
+    }
+  }
+
+  img {
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+
+    // center the image
+    left: 50%;
+    transform: translateX(-50%);
+
+    // If the screen is bigger than 768px, the image will be bigger
+    @media (max-width: 1350px) {
+      height: 500px;
+    }
+
+  }
+  // Create a half circle and position it on the bottom
+  .circle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 60%;
+    border-radius: 10rem 10rem 0 0;
+    background-color: #EB89B5;
+    z-index: -1;
+
+    // If the screen is bigger than 768px, the image will be bigger
+    @media (max-width: 1350px) {
+      width: 100%;
+    }
+  }
+}
+
+article {
+  border-bottom: 1px solid black;
+}
+
+article:first-of-type {
+  height: 40vh;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    // Make the font bigger
+    font-size: 2rem;
+  }
+}
+
+// Select all articles starting at third
+article:nth-of-type(n+3) {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "title title" "left right";
+
+  h4 {
+    grid-area: title;
+  }
+
+  // If the screen is too small change the grid-template-columns to 1fr and change the grid-template-rows to 1fr
+  @media (max-width: 1350px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title" "left" "right";
+  }
+}
+
+
+// Select only even articles
+article:nth-of-type(n+3):nth-of-type(even) {
+  // Select first section
+  section:first-of-type {
+    grid-area: left;
+  }
+
+  // Select second section
+  section:last-of-type {
+    grid-area: right;
+  }
+}
+
+// Select only odd articles
+article:nth-of-type(n+3):nth-of-type(odd) {
+  // Select first section
+  section:first-of-type {
+    grid-area: right;
+  }
+
+  // Select second section
+  section:last-of-type {
+    grid-area: left;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 3%;
+  margin-left: 10%;
+
+  // Center the title across both grid areas
+  grid-column: 1 / 3;
+  grid-row: 1;
+  // Center in the middle
+  align-self: center;
+}
+// select only the second of type
+
+section:nth-of-type(n+2) {
+  // Apply the font
+  font-weight: 400;
+  text-align: justify;
+
+  // Center the content in the middle
+  align-self: center;
+  // Bot margin left and right
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.graph { margin-left: 7vw; }
+
+article > section:first-of-type {
+  // Apply the font
+  font-weight: 400;
+  text-align: justify;
+  color: $text-colour;
+  font-size: 1.4rem;
+  font: $text-main;
+}
+
+
+article:nth-of-type(2n+4) > section:first-of-type:nth-of-type(2n+1) {
+  margin-left: 4vw;
+}
+
+article:nth-of-type(2n+3) > section:first-of-type:nth-of-type(2n+1) {
+  margin-left: -4vw;
+  margin-top: 3vh;
+}
+
+footer {
+  padding: 1rem 0;
+  border-top: 1px solid black;
+  text-align: center;
+  height: 20vh;
+
+  a {
+    display: inline-block;
+    margin: 5vh 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $text-colour;
+    padding: 1rem;
+    border: 1px solid black;
+    &:hover {
+      background: $text-colour;
+      color: $background-colour;
+    }
+  }
+}
+
+article:nth-of-type(n+3) > section:first-of-type {
+  // Fit into available space
+  width: 100%;
+  // Center the content in the middle
+  // Bot margin left and right
+
+}

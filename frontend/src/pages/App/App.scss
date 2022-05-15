@@ -1,0 +1,35 @@
+@use '../../styles/reset';
+@import '../../styles/ui';
+@import '../../styles/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  background-color: $background_colour;
+  margin: 5vh 10vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: stretch;
+
+  border: 1px solid black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-colour;
+  display: inline-block;
+  font-family: $text-main;
+}
+
+.axis {
+  color: $text-colour;
+}
+
+.line {
+  color: $text-colour;
+}

@@ -1,0 +1,50 @@
+@import '../variables';
+
+@mixin range {
+  &{
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 7px;
+    background: $text-colour;
+    border-radius: 5px;
+    background-image: $text-colour;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: $background_colour;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 $background_colour;
+    transition: background .3s ease-in-out;
+  }
+
+  &::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+}
+
+@mixin density-container{
+  datalist {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    option:not(:first-child){
+      padding-left: 24px;
+    }
+  }
+
+  input {
+    @include range;
+  }
+}

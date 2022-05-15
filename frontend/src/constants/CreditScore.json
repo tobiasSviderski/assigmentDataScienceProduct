@@ -1,0 +1,83 @@
+[
+    {
+        "agency": "TransUnion",
+        "scores": [
+            {
+                "score": 550,
+                "band": "Very Poor",
+                "rating": "Rating 1"
+            },
+            {
+                "score": 565,
+                "band": "Poor",
+                "rating": "Rating 2"
+            },
+            {
+                "score": 603,
+                "band": "Fair",
+                "rating": "Rating 3"
+            },
+
+            {
+                "score": 627,
+                "band": "Good",
+                "rating": "Rating 4"
+            },
+            {
+                "score": 710,
+                "band": "Excellent",
+                "rating": "Rating 5"
+            }
+        ]
+    },
+    {
+        "agency": "Experian",
+        "scores": [
+            {
+                "score": 560,
+                "band": "Very Poor"
+            },
+            {
+                "score": 720,
+                "band": "Poor"
+            },
+            {
+                "score": 880,
+                "band": "Fair"
+            },
+            {
+                "score": 960,
+                "band": "Good"
+            },
+            {
+                "score": 999,
+                "band": "Excellent"
+            }
+        ]
+    },
+    {
+        "agency": "Equifax",
+        "scores": [
+            {
+                "score": 438,
+                "band": "Very Poor"
+            },
+            {
+                "score": 530,
+                "band": "Poor"
+            },
+            {
+                "score": 670,
+                "band": "Good"
+            },
+            {
+                "score": 810,
+                "band": "Very Good"
+            },
+            {
+                "score": 1000,
+                "band": "Excellent"
+            }
+        ]
+    }
+]

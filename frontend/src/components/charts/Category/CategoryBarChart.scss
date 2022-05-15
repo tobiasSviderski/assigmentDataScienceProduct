@@ -1,0 +1,13 @@
+// Import the variables from the main stylesheet
+@import '../../../styles/variables';
+@import '../../../styles/ui';
+
+.category {
+  select {
+    @include select;
+  }
+
+  .axis {
+    font-size: 1.1rem;
+  }
+}

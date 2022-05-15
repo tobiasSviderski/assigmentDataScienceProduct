@@ -1,0 +1,71 @@
+// Import the variables from the main stylesheet
+@import '../../../styles/variables';
+@import '../../../styles/ui';
+
+//Select all div
+ .graph_gauge_chart{
+  display:grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-areas:
+    "graph select"
+    "graph range"
+    "graph graph_result";
+
+   .graph {
+     grid-area: graph;
+   }
+
+   .options {
+     grid-area: select;
+
+     label {
+       display: block;
+       margin-bottom: 0.5rem;
+
+     }
+
+     select {
+       @include select;
+     }
+   }
+
+   .range_area {
+      grid-area: range;
+
+     label {
+       display: block;
+       margin-bottom: 0.5rem;
+     }
+
+     input {
+       @include range;
+     }
+   }
+
+   .results {
+     grid-area: graph_result;
+     font: $text-main;
+     font-size: 1.2rem;
+     color: $text-colour;
+
+     div > span {
+       border-bottom: 2px solid black;
+     }
+   }
+
+   label {
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: $text-colour;
+
+   }
+
+   #input_range {
+     width: 15vw;
+   }
+}
+
+
+
+

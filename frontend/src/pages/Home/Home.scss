@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/ui';
+
+main {
+  margin-top: 5vh;
+}
+
+.home_title {
+  margin-top: 6vh;
+  margin-left: 3vw;
+}
+
+.home_container {
+  height: 40vh;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  font-size: 1.3rem;
+  color: $text-colour;
+  font: $text-main;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.home_a_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.home_a {
+  @include button;
+
+  display: block;
+  width: 15vw;
+  margin-left: 3vw;
+  font-size: 1.3rem;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-align: center;
+
+  &:hover {
+    color: black;
+  }
+}

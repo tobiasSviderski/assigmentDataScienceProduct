@@ -1,0 +1,62 @@
+// Import the variables from the main stylesheet
+@import '../../../styles/variables';
+@import '../../../styles/ui';
+
+
+.line_chart {
+  position: relative;
+
+  .slider-container{
+
+    .range-slider {
+      @include range-slider(80%, 54px, 30px, black, $text-colour, left, 20px, 14px, 80px);
+    }
+
+    .container-date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+      font: $text-main;
+      color: $text-colour;
+      font-size: 1.2rem;
+
+    }
+
+  }
+
+  .density-container{
+    //input and datalist
+    @include density-container;
+
+  }
+
+  //.slider-container, .density-container {
+  //  position: absolute;
+  //  display:flex;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //}
+
+  .area {
+    font-size: 0.8rem;
+  }
+
+}
+
+//.line_chart_left, .line_chart_right{
+//  position: absolute;
+//}
+
+//.line_chart_left {
+//  .slider-container, .density-container {
+//    margin-left: 35vw;
+//  }
+//}
+//
+//.line_chart_right {
+//  .slider-container, .density-container {
+//    margin-right: -50vw;
+//  }
+//}

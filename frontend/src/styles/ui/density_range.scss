@@ -1,0 +1,16 @@
+@mixin density-container{
+  datalist {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 50%;
+
+    option:not(:first-child){
+      padding-left: 24px;
+    }
+  }
+
+  input {
+    width: 50%;
+  }
+}

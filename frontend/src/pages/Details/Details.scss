@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/ui';
+
+table {
+  width: 100%;
+  border-spacing: 0;
+
+  text-align: left;
+  font-size: 1.3rem;
+  font: $text-main;
+  color: $text-colour;
+
+}
+
+table {
+  border: 1px solid black;
+}
+
+tr {
+  margin-top: 10px;
+}
+
+td, th {
+  border-bottom: black 1px solid;
+  padding: 0.5vh 3vw;
+}
+
+tr:nth-of-type(odd) {
+  background-color: grey;
+}
+
+.detail_graph{
+  margin-left: 10vw;
+}
+
+.table_details{
+  width: 20vw;
+  font-size: 0.8rem;
+  margin-right: 6vw;
+}
+
+.number_flex_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // align to row
+  flex-direction: row;
+}

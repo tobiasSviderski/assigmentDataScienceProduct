@@ -1,0 +1,25 @@
+@import '../variables';
+
+@mixin select {
+  display: inline-block;
+  background-color: inherit;
+  border: 1px solid black;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  font: 1.2rem/1.5em $text-main;
+  color: $text-colour;
+
+  option {
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-color: $background_colour;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: $text-colour;
+      color: black;
+    }
+  }
+}

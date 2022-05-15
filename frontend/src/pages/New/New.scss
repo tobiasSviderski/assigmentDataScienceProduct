@@ -1,0 +1,156 @@
+@import '../../styles/variables';
+@import '../../styles/ui';
+
+.header_new {
+  height: 20vh;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .buttons {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 25vw;
+    margin-top: 15px;
+    button {
+      @include button;
+      margin-left: 10px;
+    }
+  }
+}
+
+form {
+  select {
+    @include select;
+  }
+
+  input[type='range'] {
+    @include range;
+  }
+
+  h2 {
+    margin-left: 4vw;
+    margin-top: 6vh;
+  }
+
+  label {
+    font: $text-main;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: $text-colour;
+  }
+
+  .form_category {
+    display:flex;
+    // Order flex by columns
+    flex-direction: column;
+    margin: 0 15vw;
+
+    select {
+      margin-top: 5px;
+      width: 20vw;
+    }
+
+  }
+
+  .form_category:nth-child(odd) {
+    float: right;
+  }
+
+  .form_bools {
+    // center flex
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 15vw;
+
+    margin-top: 5px;
+    input {
+      margin-right: 10px;
+      margin-top: 7px;
+      background-color: $background_colour;
+      border: 1px solid black;
+    }
+  }
+
+  .form_counter{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 15px;
+
+    label {
+      margin-bottom: 10px;
+    }
+  }
+
+  .form_counter_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+    input[type='number']{
+      background-color: $background_colour;
+      border: 1px solid black;
+      color: $text-colour;
+    }
+  }
+
+  .form_date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15vw;
+    flex-direction: row;
+
+    input[type='date'] {
+      background-color: $background_colour;
+      border: 1px solid black;
+      color: $text-colour;
+      margin-left: 3vw;
+      font-size: 1.3rem;
+    }
+  }
+
+  .form_occupation{
+    margin: 5vh 0 0 5vw;
+
+    input[type='text'] {
+      background-color: $background_colour;
+      border: 1px solid black;
+      color: $text-colour;
+      font-size: 1.5rem;
+      margin-left: 4vw;
+    }
+  }
+
+  .form_submit {
+    background-color: $background_colour;
+    border: 1px solid black;
+    color: $text-colour;
+    font-size: 2rem;
+    // center into the page
+    margin: 5vh 30vw;
+    //margin-top: 5vh;
+    width: 20vw;
+    height: 5vh;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $text-colour;
+      color: black;
+    }
+
+  }
+
+}
